@@ -1,0 +1,31 @@
+.main-products {
+  &__container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    font-size: 24px;
+  }
+
+  &__item {
+    margin: 0 20px;
+  }
+}
+
+.products-grid {
+  display: grid;
+  justify-items: center;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+
+  &__item {
+    max-width: 340px;
+  }
+}
