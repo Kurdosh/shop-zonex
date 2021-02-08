@@ -1,0 +1,35 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      position: relative;
+      margin-right: 35px;
+
+      &::after {
+        content: "/";
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        color: var(--color-gray);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__link {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-gray);
+
+    &_current {
+      color: var(--color-dark);
+    }
+  }
+}

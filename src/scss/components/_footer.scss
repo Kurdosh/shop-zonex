@@ -1,0 +1,162 @@
+.footer {
+  &__content {
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 1326px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  &__list {
+    &_row {
+      display: flex;
+
+      .footer__item {
+        margin-bottom: 0 !important;
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  &__column:nth-child(2) {
+    margin-left: -80px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    color: var(--color-tundor);
+
+    &_row {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--color-dark);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-style: 700px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    margin-bottom: 25px;
+    width: 650px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-tundora);
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding: 40px 0;
+  }
+
+  &__social {
+    margin-right: 10px;
+  }
+}
+
+.subscribe-form {
+  position: relative;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 13px 0;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-tundora);
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-dark);
+  }
+
+  &__field {
+    display: block;
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 10px;
+    width: 100%;
+
+    input {
+      border: none;
+      padding-right: 80px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 13px;
+      color: var(--color-dark);
+
+      &:focus {
+        border: none;
+      }
+
+      &::placeholder {
+        color: rgba(#454545, 0.5);
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_tw {
+      background-image: url("../img/tw.png");
+    }
+
+    &_fb {
+      background-image: url("../img/fb.png");
+    }
+
+    &_in {
+      background-image: url("../img/in.png");
+    }
+
+    &_pin {
+      background-image: url("../img/pin.png");
+    }
+  }
+}

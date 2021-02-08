@@ -67,6 +67,7 @@ ul {
 .btn-reset {
   border: none;
   padding: 0;
+  font-weight: inherit;
   background: transparent;
   cursor: pointer;
 }
@@ -84,6 +85,7 @@ ul {
 .main-link {
   position: relative;
   font-size: 15px;
+  color: var(--color-dark);
 
   &::before {
     content: "";
@@ -92,8 +94,12 @@ ul {
     bottom: -5px;
     width: 0%;
     height: 2px;
-    background-color: var(--color-dark);
+    background-color: currentColor;
     transition: width 0.15s linear;
+  }
+
+  &_white {
+    color: var(--color-white);
   }
 
   &:hover {
@@ -111,4 +117,8 @@ ul {
       transition: width 0.15s linear;
     }
   }
+}
+
+.container-narrow {
+  max-width: 1326px;
 }

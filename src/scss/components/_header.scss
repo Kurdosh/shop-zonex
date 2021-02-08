@@ -1,9 +1,9 @@
 .header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 
   &__container {
     display: flex;
@@ -14,7 +14,7 @@
   }
 
   &__shop-nav {
-      margin-left: 250px;
+    margin-left: 250px;
   }
 }
 
@@ -30,4 +30,8 @@
     fill: var(--color-dark);
     object-fit: cover;
   }
+}
+
+.catalog-header {
+  padding-top: 40px;
 }

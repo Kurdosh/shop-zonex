@@ -4,5 +4,13 @@ export default {
   $html: document.documentElement,
   $body: document.body,
   $bannerSlider: document.querySelector(".banner-slider"),
-  $purched: document.querySelector(".purched")
+  $purched: document.querySelector(".purched"),
+  $catalogSlider: document.querySelector(".hero-catalog__slider"),
+  $catalogFilters: document.querySelectorAll(".catalog-filter"),
+  $catalogFiltersTop: document.querySelectorAll(".catalog-filter__top"),
+  $hideFilters: document.querySelector(".hide-filters"),
+  $catalogColumns: document.querySelector(".catalog-columns__list"),
+  $catalogGridContent: document.querySelector(".catalog-grid__content"),
+  $catalogFilterItems: document.querySelectorAll(".catalog-filter__item"),
+  $catalogChoice: document.querySelector(".catalog-choice"),
 };
