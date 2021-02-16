@@ -9,3 +9,9 @@ import {scrollTo} from './functions/smooth-scroll';
 import {disableScroll, enableScroll} from './functions/stop-scroll';
 
 //disableScroll(fix) // fix -> class of element with position: fixed
+
+import vars from './_vars';
+
+vars.$freeDeliveryBtn.addEventListener('click', (e) => {
+    e.currentTarget.closest(".free-delivery").style.display = 'none';
+});

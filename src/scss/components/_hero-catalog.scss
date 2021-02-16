@@ -1,14 +1,21 @@
 .hero-catalog {
   padding-top: 130px;
+
   &__slider {
+    position: relative;
     overflow: hidden;
     width: 100%;
     background-color: #f8f8f8;
+  }
+
+  &__container {
+    position: relative;
   }
 }
 
 .catalog-slide {
   padding: 108px;
+  min-height: 245px;
 
   &__title {
     margin: 0;
@@ -32,6 +39,12 @@
     align-items: center;
   }
 
+  &__image {
+    position: absolute;
+    right: 19%;
+    bottom: 0;
+  }
+
   &__link {
     display: inline-block;
     padding: 18px 45px;
@@ -50,4 +63,41 @@
       margin-right: 15px;
     }
   }
+}
+
+.hero-prev-btn,
+.hero-next-btn {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-dark);
+  width: 48px;
+  height: 48px;
+  color: var(--color-dark);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+
+  svg {
+    width: 40px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill 0.3s;
+  }
+
+  &:hover {
+    background-color: var(--color-dark);
+
+    svg {
+      fill: var(--color-white);
+    }
+  }
+}
+
+.hero-next-btn {
+  left: auto;
+  right: 30px;
 }

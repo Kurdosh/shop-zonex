@@ -102,16 +102,16 @@ ul {
     color: var(--color-white);
   }
 
-  &:hover {
+  &_current {
+    cursor: pointer;
+
     &::before {
       width: 100%;
       transition: width 0.15s linear;
     }
   }
 
-  &_current {
-    cursor: pointer;
-
+  &:hover {
     &::before {
       width: 100%;
       transition: width 0.15s linear;

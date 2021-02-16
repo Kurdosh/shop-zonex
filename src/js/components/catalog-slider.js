@@ -4,4 +4,8 @@ import vars from '../_vars';
 const catalogSlier = new Swiper(vars.$catalogSlider,{
     loop: true,
     slidesPerView: 1,
+    navigation: {
+        nextEl: '.hero-next-btn',
+        prevEl: '.hero-prev-btn',
+      },
 });
